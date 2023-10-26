@@ -1,0 +1,389 @@
+/*  rem mode in figma!!!!
+relative measurement -- 1REM is 16 px
+so if a font is 16px here, and i wanted a font to be 2rem, itll be 32pt font */
+@font-face {
+    font-family: 'Neue Haas Light';
+    src: url('font/NeueHaasDisplayLight.ttf');
+}
+@font-face {
+    font-family: 'Neue Haas Medium';
+    src: url('font/NeueHaasDisplayMediu.ttf');
+}
+@font-face {
+    font-family: 'Redaction50';
+    src: url('font/Redaction50-8Mg4n.otf');
+}
+
+html {
+    font-size: 16px; 
+}
+
+body {
+    max-width: 93.3125rem; 
+    margin: auto; 
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Neue Haas Light';
+    /* max-width: whatever the REM is on dev mode in figma;
+    background-color: use hex code from figma;
+    font-family: idk figure out link;
+    color: hex code for paragraph text;
+    line-height: 1.5;
+    margin: 5rem auto (auto is for center); */
+}
+
+header {
+     color: whitesmoke;
+     font-size: 15pt; 
+    font-family: 'Redaction50';  
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 1rem;
+   
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: 'Redaction50';
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: 'Neue Haas Medium';
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/*
+a{
+   
+    color: ;
+    text-decoration: none;
+    margin: 0 0 0 2rem; 
+}
+
+/* -----------------
+a h1:hover {
+     change color: ;
+    or do whatever you want 
+} 
+
+
+a h1:visited {
+    
+}
+----------------------
+*/
+
+nav {
+     color: whitesmoke;
+     font-style: 'Redaction50';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+nav a {
+    color: whitesmoke;
+    margin: 0 0 0 2rem; 
+}
+
+nav a:hover {
+    color: hotpink;
+}
+
+a {
+  text-decoration: none;  
+  color: whitesmoke;
+}
+
+section {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+    margin-bottom: 2em;
+}
+
+main {
+
+}
+
+footer {
+    width: 43rem;
+    font-size: 1rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer a {
+    font-size: 1rem;
+    font-style: 'Redaction50';
+}
+
+/* --------------index.html---------------- */
+
+
+#grid2 {
+    display: grid; 
+    grid-column: repeat (12, 1fr); 
+    grid-row: 50% 50%; 
+    grid-auto-flow: dense;
+    margin-bottom: 2em;
+}
+
+#portfolio {
+    text-align: right;
+    padding-right: 4em;
+}
+
+#about {
+    text-align: center;
+    padding-right: 5em;
+}
+
+#contact {
+    text-align: left;
+    padding-right: 10em;
+}
+
+
+#byline {
+    max-width: 54rem;
+    margin: 2em;
+    text-align: center;
+    margin-bottom: 4em;
+    font-size: 2rem;
+    display: grid; 
+    grid-column: 3/11;
+}
+
+#MOLdescription {
+    grid-column: 2/7;
+}
+
+#MOLimg {
+    grid-column: 8/12; 
+}
+
+#typdescription {
+    grid-column: 7/12;
+    margin-bottom: 3em;
+}
+
+#typimgline {
+    grid-column: 3/5;
+}
+
+#typimgdiagonal {
+    
+}
+
+#logoprojectdescription {
+    grid-column: 2/7;
+    margin-bottom: 6em;
+}
+
+#logoprojectimg {
+    grid-column: 8/12;
+    margin-bottom: 6em;
+}
+
+#contrastdescription {
+    grid-area: 1/7/3/12;
+    margin-bottom: 10em;
+}
+
+#contrastimg1 {
+    grid-column: 2/4;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  /*  margin: 1 0 0 1; */
+}
+ #contrastimg2 {
+    grid-column: 4/6;
+    margin-left: 2em;
+    margin-bottom: 1em;
+   /*  margin: 1 0 0 0; */
+ }
+
+ #contrastimg3 {
+    grid-column:1/3;
+    margin-right: 2em;
+    margin-left: 6em;
+    margin-bottom: 8em;
+
+ }
+
+ #contrastimg4 {
+    grid-column: 4/6;
+    margin-left: 2em;
+    margin-bottom: 8em;
+ }
+
+ #olivedescription {
+    grid-column: 2/6;
+    margin-bottom: 8em;
+ }
+
+ #oliveimg1 {
+    grid-column: 6/9;
+    margin-bottom: 8em;
+ }
+
+ #oliveimg2 {
+    grid-column: 9/12;
+    margin-bottom: 8em;
+ }
+
+ /* -------------about.html----------------- */
+ /* ask about overlapping content in for the section */
+
+ #aboutmeimg {
+    grid-column: 2/8;
+ }
+
+ #aboutdescription {
+    grid-column: 6/12;
+ }
+
+ /* ---------------contact.html---------------- */
+
+
+ /* -------------zine.html----------------*/
+ /* ask about order of images and why they're doing THAT */
+
+ #MOLdescriptionmain {
+    grid-column: 2/8;
+ }
+
+ #zinecoverpg {
+    grid-column: 8/12;
+ }
+
+ #zinepg1 {
+    grid-column: 2/8;
+ }
+
+ #zinepg3 {
+    grid-column:6/12;
+ }
+
+ #zinepg5 {
+    grid-column: 2/8;
+ }
+
+ #zinepg7 {
+    grid-column: 6/12;
+ }
+
+ #zinepg9 {
+    grid-column: 2/8;
+ }
+
+ #zinepg11 {
+    grid-column: 6/12;
+ }
+
+ #zinepg13 {
+    grid-column: 2/8;
+ }
+
+ #zinebackpg {
+    grid-column: 8/12;
+ }
+
+ /* -------------typ.html-----------------*/
+ /* ASK FOR HELP AGAIN ROFL */
+
+ #typdescriptionmain {
+    grid-column: 2/7;
+    margin-bottom: -10em;
+    margin-top: -4em;
+ }
+
+ #typimage01 {
+    grid-column: 6/12;
+    margin-left: 50em;
+ }
+
+ #typimage02 {
+    grid-column: 6/12;
+    margin-left: 10em;
+    margin-top: -20em;
+ }
+
+ /*-------------mclogo.html--------------*/
+/* ask again... */
+
+ #logoprojectdescriptionmain {
+    grid-column: 3/9;
+ }
+
+ #mclogoimg01 {
+    grid-column: 4/10;
+ }
+
+/* -------------contrast.html-----------*/
+
+#contrastdescriptionmain {
+    grid-column: 2/8;
+}
+
+#contrastdrawing01 {
+    grid-column: 7/13;
+}
+
+#contrastdrawing02 {
+    grid-column: 2/7;
+}
+
+#contrastdrawing03 {
+    grid-column: 7/13;
+}
+
+#contrastdrawing04 {
+    grid-column: 2/7;
+}
+
+/*----------------olive.html----------------*/
+#olivedescriptionmain {
+    grid-column:2/7;
+}
+
+#oliveimg01 {
+    grid-column:8/12;
+}
+
+#oliveimg02 {
+    grid-column:2/7;
+}
+
+/*--------------------------------------------*/
+/*
+HELP FOR FONT
+HELP FOR IMAGE PLACEMENT
+HELP FOR FOOTER 
+
+*/
+
+/*.selected {
+    /* color??
+}
+*/
+
+
+/* if you want rules to apply for multiple
+h1
+nav
+footer {
+    .....
+    */
