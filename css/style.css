@@ -94,7 +94,7 @@ nav a {
 }
 
 nav a:hover {
-    color: hotpink;
+    color: #6f2da8;
 }
 
 a {
@@ -117,6 +117,7 @@ main {
 footer {
     width: 43rem;
     font-size: 1rem;
+    font-style:'Redaction50';
     margin: auto;
     display: flex;
     align-items: center;
@@ -126,7 +127,22 @@ footer {
 
 footer a {
     font-size: 1rem;
-    font-style: 'Redaction50';
+    font-family:'Redaction50';
+}
+
+footer a:hover {
+    color:#6f2da8;
+}
+
+h1:hover {
+    color: #6f2da8;
+
+}
+
+/*-------------logo.html------------*/
+
+#logohtmllink a:hover {
+    color:#6f2da8;
 }
 
 /* --------------index.html---------------- */
@@ -138,6 +154,10 @@ footer a {
     grid-row: 50% 50%; 
     grid-auto-flow: dense;
     margin-bottom: 2em;
+}
+
+#logoimage {
+    margin-top: -7em;
 }
 
 #portfolio {
@@ -160,7 +180,8 @@ footer a {
     max-width: 54rem;
     margin: 2em;
     text-align: center;
-    margin-bottom: 4em;
+    margin-top: -1em;
+    margin-bottom: 2.5em;
     font-size: 2rem;
     display: grid; 
     grid-column: 3/11;
@@ -172,19 +193,32 @@ footer a {
 
 #MOLimg {
     grid-column: 8/12; 
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#MOLimg:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 #typdescription {
     grid-column: 7/12;
     margin-bottom: 3em;
+    margin-left: -5em;
 }
 
 #typimgline {
     grid-column: 3/5;
+    margin-right: 7em;
+    margin-left: -3em;
 }
 
 #typimgdiagonal {
-    
+    margin-left: 4em;
+
 }
 
 #logoprojectdescription {
@@ -195,6 +229,7 @@ footer a {
 #logoprojectimg {
     grid-column: 8/12;
     margin-bottom: 6em;
+    margin-top: 3em;
 }
 
 #contrastdescription {
@@ -206,13 +241,31 @@ footer a {
     grid-column: 2/4;
     margin-left: 1em;
     margin-bottom: 1em;
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
   /*  margin: 1 0 0 1; */
 }
+#contrastimg1:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
  #contrastimg2 {
     grid-column: 4/6;
     margin-left: 2em;
     margin-bottom: 1em;
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
    /*  margin: 1 0 0 0; */
+ }
+
+ #contrastimg2:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
  }
 
  #contrastimg3 {
@@ -220,13 +273,30 @@ footer a {
     margin-right: 2em;
     margin-left: 6em;
     margin-bottom: 8em;
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+ }
 
+ #contrastimg3:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
  }
 
  #contrastimg4 {
     grid-column: 4/6;
     margin-left: 2em;
     margin-bottom: 8em;
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+ }
+
+ #contrastimg4:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
  }
 
  #olivedescription {
@@ -237,26 +307,48 @@ footer a {
  #oliveimg1 {
     grid-column: 6/9;
     margin-bottom: 8em;
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+ }
+
+ #oliveimg1:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
  }
 
  #oliveimg2 {
     grid-column: 9/12;
     margin-bottom: 8em;
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+ }
+
+ #oliveimg2:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
  }
 
  /* -------------about.html----------------- */
  /* ask about overlapping content in for the section */
 
  #aboutmeimg {
-    grid-column: 2/8;
+    grid-column: 2/6;
  }
 
  #aboutdescription {
-    grid-column: 6/12;
+    grid-column: 7/12;
  }
 
- /* ---------------contact.html---------------- */
 
+ /* ---------------logo.html---------------- */
+
+#biglogoimage {
+    align-items: center;
+}
 
  /* -------------zine.html----------------*/
  /* ask about order of images and why they're doing THAT */
@@ -367,7 +459,34 @@ footer a {
     grid-column:2/7;
 }
 
-/*--------------------------------------------*/
+/*-------------contact--------------*/
+#email {
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+input, textarea {
+    width: 85%;
+    background-color: black;
+    border: 2px dotted whitesmoke;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 8px 16px 8px 16px;
+}
+
+label {
+    display: block;
+    margin: 16px 0px 16px 20px;
+}
+
+#emillabel {
+    margin-left: 45px;
+    width: 98.5%;
+}
+
+textarea {
+    height: 200px;
+}
 /*
 HELP FOR FONT
 HELP FOR IMAGE PLACEMENT
