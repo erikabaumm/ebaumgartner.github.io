@@ -134,7 +134,7 @@ footer a:hover {
     color:#6f2da8;
 }
 
-h1:hover {
+h1 a:hover {
     color: #6f2da8;
 
 }
@@ -189,6 +189,7 @@ h1:hover {
 
 #MOLdescription {
     grid-column: 2/7;
+
 }
 
 #MOLimg {
@@ -301,12 +302,12 @@ h1:hover {
 
  #olivedescription {
     grid-column: 2/6;
-    margin-bottom: 8em;
+    margin-bottom: 6em;
  }
 
  #oliveimg1 {
     grid-column: 6/9;
-    margin-bottom: 8em;
+    margin-bottom: 6em;
     -webkit-filter:grayscale(100%);
     filter:grayscale(100%);
     -webkit-transition: .3s ease-in-out;
@@ -320,7 +321,7 @@ h1:hover {
 
  #oliveimg2 {
     grid-column: 9/12;
-    margin-bottom: 8em;
+    margin-bottom: 6em;
     -webkit-filter:grayscale(100%);
     filter:grayscale(100%);
     -webkit-transition: .3s ease-in-out;
@@ -336,10 +337,12 @@ h1:hover {
  /* ask about overlapping content in for the section */
 
  #aboutmeimg {
-    grid-column: 2/6;
+    grid-column: 2/7;
+    z-index:1;
  }
 
  #aboutdescription {
+    z-index:2;
     grid-column: 7/12;
  }
 
@@ -347,14 +350,53 @@ h1:hover {
  /* ---------------logo.html---------------- */
 
 #biglogoimage {
+    grid-area: 2/12/3/5;
+    margin-top: 10em;
+    margin-left: 5em;
+}
+
+#logofooter{
+    width: 70rem;
+    font-size: 5rem;
+    font-style:'Redaction50';
+    margin: auto;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-right: 3em;
+    
+}
+
+
+portfoliolink1 a{
+    font-size: 5rem;
+    font-family:'Redaction50';
+}
+
+portfoliolink1 a:hover {
+   color: #6f2da8;
+}
+
+#grid3 {
+    display: grid; 
+    grid-template-columns: 8ch auto;
+    grid-row: 1 / span 5;
+    grid-auto-flow: dense;
+    margin-bottom: 2em;
 }
 
  /* -------------zine.html----------------*/
  /* ask about order of images and why they're doing THAT */
 
+ 
+
+  #molheader {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
  #MOLdescriptionmain {
-    grid-column: 2/8;
+    grid-column: 10/25;
  }
 
  #zinecoverpg {
@@ -362,7 +404,7 @@ h1:hover {
  }
 
  #zinepg1 {
-    grid-column: 2/8;
+    grid-column: 3/8;
  }
 
  #zinepg3 {
@@ -370,7 +412,7 @@ h1:hover {
  }
 
  #zinepg5 {
-    grid-column: 2/8;
+    grid-column: 3/8;
  }
 
  #zinepg7 {
@@ -378,7 +420,7 @@ h1:hover {
  }
 
  #zinepg9 {
-    grid-column: 2/8;
+    grid-column: 3/8;
  }
 
  #zinepg11 {
@@ -386,11 +428,11 @@ h1:hover {
  }
 
  #zinepg13 {
-    grid-column: 2/8;
+    grid-column: 3/8;
  }
 
  #zinebackpg {
-    grid-column: 8/12;
+    grid-column: 7/10;
  }
 
  /* -------------typ.html-----------------*/
@@ -416,34 +458,46 @@ h1:hover {
  /*-------------mclogo.html--------------*/
 /* ask again... */
 
+
+
  #logoprojectdescriptionmain {
-    grid-column: 3/9;
+    grid-column: 7/30;
  }
 
  #mclogoimg01 {
-    grid-column: 4/10;
+    grid-column: 10/30;
+    margin-left: -8em;
  }
+
 
 /* -------------contrast.html-----------*/
 
 #contrastdescriptionmain {
-    grid-column: 2/8;
+    grid-column: 2/7;
 }
 
 #contrastdrawing01 {
-    grid-column: 7/13;
+    grid-column: 8/13;
+    margin-top: 5em;
+    margin-bottom:2em;
+    margin-left: -2em;
 }
 
 #contrastdrawing02 {
     grid-column: 2/7;
+    margin-top: -5em;
+    margin-left: 5em;
 }
 
 #contrastdrawing03 {
-    grid-column: 7/13;
+    grid-column: 8/13;
+    margin-left: -2em;
 }
 
 #contrastdrawing04 {
     grid-column: 2/7;
+    margin-top: -5em;
+    margin-left: 5em;
 }
 
 /*----------------olive.html----------------*/
@@ -457,6 +511,7 @@ h1:hover {
 
 #oliveimg02 {
     grid-column:2/7;
+    margin-top: -13em;
 }
 
 /*-------------contact--------------*/
