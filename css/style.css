@@ -44,6 +44,7 @@ header {
    
 }
 
+
 h1 {
     color: whitesmoke;
     font-family: 'Redaction50';
@@ -136,7 +137,7 @@ footer a:hover {
 
 h1 a:hover {
     color: #6f2da8;
-
+    transform: scale(1.5);
 }
 
 /*-------------logo.html------------*/
@@ -158,6 +159,10 @@ h1 a:hover {
 
 #logoimage {
     margin-top: -7em;
+}
+
+#logoimage:hover {
+    transform: scale(1.05);
 }
 
 #portfolio {
@@ -203,6 +208,7 @@ h1 a:hover {
 #MOLimg:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
+    transform: scale(1.05);
 }
 
 #typdescription {
@@ -215,11 +221,26 @@ h1 a:hover {
     grid-column: 3/5;
     margin-right: 7em;
     margin-left: -3em;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#typimgline:hover {
+    transform: scale(1.05);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 #typimgdiagonal {
     margin-left: 4em;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
 
+#typimgdiagonal:hover {
+    transform: scale(1.05);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 #logoprojectdescription {
@@ -231,6 +252,14 @@ h1 a:hover {
     grid-column: 8/12;
     margin-bottom: 6em;
     margin-top: 3em;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#logoprojectimg:hover {
+    transform: scale(1.05);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 #contrastdescription {
@@ -251,6 +280,7 @@ h1 a:hover {
 #contrastimg1:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
+    transform: scale(1.05);
 }
 
  #contrastimg2 {
@@ -267,6 +297,7 @@ h1 a:hover {
  #contrastimg2:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
+    transform: scale(1.05);
  }
 
  #contrastimg3 {
@@ -283,6 +314,7 @@ h1 a:hover {
  #contrastimg3:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
+    transform: scale(1.05);
  }
 
  #contrastimg4 {
@@ -298,6 +330,7 @@ h1 a:hover {
  #contrastimg4:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
+    transform: scale(1.05);
  }
 
  #olivedescription {
@@ -317,6 +350,7 @@ h1 a:hover {
  #oliveimg1:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
+    transform: scale(1.05);
  }
 
  #oliveimg2 {
@@ -331,6 +365,7 @@ h1 a:hover {
  #oliveimg2:hover {
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
+    transform: scale(1.05);
  }
 
  /* -------------about.html----------------- */
@@ -355,6 +390,10 @@ h1 a:hover {
     margin-left: 5em;
 }
 
+#biglogoimage:hover {
+    transform: scale(.9);
+}
+
 #logofooter{
     width: 70rem;
     font-size: 5rem;
@@ -367,6 +406,9 @@ h1 a:hover {
     
 }
 
+#portfoliolink1 a:hover {
+    transform: scale (1.25);
+}
 
 portfoliolink1 a{
     font-size: 5rem;
